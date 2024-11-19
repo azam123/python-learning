@@ -1,5 +1,5 @@
 # python-learning
-**Explanation:**
+**Data Types:**
 **Integer:** Whole numbers.
 **Float:** Numbers with decimals.
 **Complex:** Numbers with a real and imaginary part.
