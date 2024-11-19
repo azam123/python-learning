@@ -17,10 +17,10 @@
 
 
 **Conditional Statements:**
-if: Executes a block of code if the condition is True.
-if-else: Executes one block if the condition is True and another if it’s False.
-if-elif-else: Handles multiple conditions.
-Nested if: Checks conditions within another condition.
-Logical operators (and, or): Combine multiple conditions.
-Shorthand if: Allows concise conditional expressions.
-pass: Placeholder when no action is required.
+**if:** Executes a block of code if the condition is True.
+**if-else:** Executes one block if the condition is True and another if it’s False.
+**if-elif-else:** Handles multiple conditions.
+**Nested if:** Checks conditions within another condition.
+**Logical operators (and, or):** Combine multiple conditions.
+**Shorthand if:** Allows concise conditional expressions.
+**pass:** Placeholder when no action is required.
