@@ -33,3 +33,30 @@
 **Nested Loops:** The outer for loop runs from 1 to 3, and for each iteration, the inner for loop runs from 1 to 3, printing a multiplication table.
 **Break Statement:** The break statement exits the loop when i equals 6.
 **Continue Statement:** The continue statement skips the current iteration when i equals 3 and moves to the next iteration.
+
+
+
+**Functions in python:**
+**Simple Function (No Arguments, No Return Value):**
+greet() is a function that prints a simple greeting message without accepting any arguments or returning a value.
+
+**Function with Arguments (No Return Value):**
+greet_person(name) accepts a name argument and prints a personalized greeting message without returning a value.
+
+**Function with Return Value (No Arguments):**
+get_favorite_number() doesn't take any arguments but returns a value (7 in this case).
+
+**Function with Arguments and Return Value:**
+add_numbers(a, b) takes two arguments, adds them, and returns the sum.
+
+**Function with Default Arguments:**
+greet_person_with_default(name="Guest") has a default value for the name argument. If no argument is passed, it defaults to "Guest".
+
+**Function with Variable Number of Arguments (Using *args):**
+print_numbers(*args) accepts any number of positional arguments and prints them as a tuple.
+
+**Function with Keyword Arguments (Using kwargs):**
+print_info(**kwargs) accepts any number of keyword arguments and prints them in a key-value pair format.
+
+**Lambda Function (Anonymous Function):**
+multiply = lambda x, y: x * y creates a simple anonymous function that multiplies two numbers.
