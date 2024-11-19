@@ -60,3 +60,23 @@ print_info(**kwargs) accepts any number of keyword arguments and prints them in 
 
 **Lambda Function (Anonymous Function):**
 multiply = lambda x, y: x * y creates a simple anonymous function that multiplies two numbers.
+
+
+
+**Classes and Objects:**
+**Class Definition:**
+
+class Car: defines a class named Car.
+Inside the class, we have an initializer method (__init__), which is called when an object of the class is created. This method initializes the object's attributes (make, model, and year).
+Methods are functions defined inside the class. For example, display_info(), start_engine(), and stop_engine() are methods that operate on the objects.
+
+**Creating Objects:**
+
+car1 = Car("Toyota", "Corolla", 2020) creates an object of the Car class and passes values for make, model, and year to the __init__ method.
+car2 = Car("Honda", "Civic", 2022) creates another object.
+Accessing Methods and Attributes:
+
+car1.display_info() calls the display_info method on the car1 object to print the details of the car.
+car1.start_engine() starts the engine for car1.
+Similarly, methods are called for car2.
+
