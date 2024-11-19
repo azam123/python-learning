@@ -24,3 +24,12 @@
 **Logical operators (and, or):** Combine multiple conditions.
 **Shorthand if:** Allows concise conditional expressions.
 **pass:** Placeholder when no action is required.
+
+
+**Loops:**
+**For Loop (List Iteration):** The for loop iterates over each item in the list fruits and prints them.
+**For Loop (Range):** The range(1, 6) generates numbers from 1 to 5, and the loop iterates through each number to print it.
+**While Loop:** This loop continues as long as the condition (counter <= 5) is True, printing numbers from 1 to 5.
+**Nested Loops:** The outer for loop runs from 1 to 3, and for each iteration, the inner for loop runs from 1 to 3, printing a multiplication table.
+**Break Statement:** The break statement exits the loop when i equals 6.
+**Continue Statement:** The continue statement skips the current iteration when i equals 3 and moves to the next iteration.
