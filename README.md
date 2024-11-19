@@ -25,6 +25,7 @@
 **Shorthand if:** Allows concise conditional expressions.
 **pass:** Placeholder when no action is required.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Loops:**
 **For Loop (List Iteration):** The for loop iterates over each item in the list fruits and prints them.
@@ -34,7 +35,7 @@
 **Break Statement:** The break statement exits the loop when i equals 6.
 **Continue Statement:** The continue statement skips the current iteration when i equals 3 and moves to the next iteration.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Functions in python:**
 **Simple Function (No Arguments, No Return Value):**
@@ -61,7 +62,7 @@ print_info(**kwargs) accepts any number of keyword arguments and prints them in 
 **Lambda Function (Anonymous Function):**
 multiply = lambda x, y: x * y creates a simple anonymous function that multiplies two numbers.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Classes and Objects:**
 **Class Definition:**
