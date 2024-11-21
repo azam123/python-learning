@@ -16,7 +16,8 @@
 - **Bytearray**: Mutable sequence of bytes.
 - **Range**: Represents a sequence of numbers.
 - **Frozenset**: Immutable version of a set.
-
+- 
+**Examples here :** https://github.com/azam123/python-learning/blob/main/data_types.py
 ---
 
 ### **Conditional Statements:**
@@ -28,6 +29,8 @@
 - **Logical operators (and, or)**: Combine multiple conditions.
 - **Shorthand if**: Allows concise conditional expressions.
 - **pass**: Placeholder when no action is required.
+- 
+**Examples here :** https://github.com/azam123/python-learning/blob/main/conditional_statements.py
 
 ---
 
@@ -40,6 +43,7 @@
 - **Break Statement**: Exits the loop when a condition is met (e.g., `i == 6`).
 - **Continue Statement**: Skips the current iteration and moves to the next when a condition is met (e.g., `i == 3`).
 
+**Examples here :**https://github.com/azam123/python-learning/blob/main/loops.py
 ---
 
 ### **Functions in Python:**
@@ -90,7 +94,8 @@
   ```python
   multiply = lambda x, y: x * y
   ```
-
+  
+**Examples here :**https://github.com/azam123/python-learning/blob/main/functions.py
 ---
 
 ### **Classes and Objects:**
@@ -124,3 +129,4 @@
   car1.display_info()  # Outputs: 2020 Toyota Corolla
   car1.start_engine()  # Outputs: Engine started
   ```
+  **Examples here : **https://github.com/azam123/python-learning/blob/main/classes_objects.py
