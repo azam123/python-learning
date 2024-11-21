@@ -1,86 +1,126 @@
 # python-learning
-**Data Types:**
-**Integer:** Whole numbers.
-**Float:** Numbers with decimals.
-**Complex:** Numbers with a real and imaginary part.
-**String:** Sequence of characters.
-**Boolean:** Logical values (True or False).
-**List:** Ordered and mutable collection.
-**Tuple:** Ordered but immutable collection.
-**Set:** Unordered collection of unique elements.
-**Dictionary:** Key-value pairs.
-**None:** Represents the absence of a value.
-**Bytes:** Immutable sequence of bytes.
-**Bytearray:** Mutable sequence of bytes.
-**Range:** Represents a sequence of numbers.
-**Frozenset:** Immutable version of a set.
 
+### **Data Types:**
 
-**Conditional Statements:**
-**if:** Executes a block of code if the condition is True.
-**if-else:** Executes one block if the condition is True and another if it’s False.
-**if-elif-else:** Handles multiple conditions.
-**Nested if:** Checks conditions within another condition.
-**Logical operators (and, or):** Combine multiple conditions.
-**Shorthand if:** Allows concise conditional expressions.
-**pass:** Placeholder when no action is required.
+- **Integer**: Whole numbers.
+- **Float**: Numbers with decimals.
+- **Complex**: Numbers with a real and imaginary part.
+- **String**: Sequence of characters.
+- **Boolean**: Logical values (True or False).
+- **List**: Ordered and mutable collection.
+- **Tuple**: Ordered but immutable collection.
+- **Set**: Unordered collection of unique elements.
+- **Dictionary**: Key-value pairs.
+- **None**: Represents the absence of a value.
+- **Bytes**: Immutable sequence of bytes.
+- **Bytearray**: Mutable sequence of bytes.
+- **Range**: Represents a sequence of numbers.
+- **Frozenset**: Immutable version of a set.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-**Loops:**
-**For Loop (List Iteration):** The for loop iterates over each item in the list fruits and prints them.
-**For Loop (Range):** The range(1, 6) generates numbers from 1 to 5, and the loop iterates through each number to print it.
-**While Loop:** This loop continues as long as the condition (counter <= 5) is True, printing numbers from 1 to 5.
-**Nested Loops:** The outer for loop runs from 1 to 3, and for each iteration, the inner for loop runs from 1 to 3, printing a multiplication table.
-**Break Statement:** The break statement exits the loop when i equals 6.
-**Continue Statement:** The continue statement skips the current iteration when i equals 3 and moves to the next iteration.
+### **Conditional Statements:**
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- **if**: Executes a block of code if the condition is True.
+- **if-else**: Executes one block if the condition is True and another if it’s False.
+- **if-elif-else**: Handles multiple conditions.
+- **Nested if**: Checks conditions within another condition.
+- **Logical operators (and, or)**: Combine multiple conditions.
+- **Shorthand if**: Allows concise conditional expressions.
+- **pass**: Placeholder when no action is required.
 
-**Functions in python:**
-**Simple Function (No Arguments, No Return Value):**
-greet() is a function that prints a simple greeting message without accepting any arguments or returning a value.
+---
 
-**Function with Arguments (No Return Value):**
-greet_person(name) accepts a name argument and prints a personalized greeting message without returning a value.
+### **Loops:**
 
-**Function with Return Value (No Arguments):**
-get_favorite_number() doesn't take any arguments but returns a value (7 in this case).
+- **For Loop (List Iteration)**: Iterates over each item in the list and performs an action.
+- **For Loop (Range)**: Uses `range(1, 6)` to generate numbers from 1 to 5, iterating through each to perform an action.
+- **While Loop**: Executes as long as the condition (e.g., `counter <= 5`) is True.
+- **Nested Loops**: An outer loop that runs multiple times, and for each iteration, an inner loop runs, like printing a multiplication table.
+- **Break Statement**: Exits the loop when a condition is met (e.g., `i == 6`).
+- **Continue Statement**: Skips the current iteration and moves to the next when a condition is met (e.g., `i == 3`).
 
-**Function with Arguments and Return Value:**
-add_numbers(a, b) takes two arguments, adds them, and returns the sum.
+---
 
-**Function with Default Arguments:**
-greet_person_with_default(name="Guest") has a default value for the name argument. If no argument is passed, it defaults to "Guest".
+### **Functions in Python:**
 
-**Function with Variable Number of Arguments (Using *args):**
-print_numbers(*args) accepts any number of positional arguments and prints them as a tuple.
+- **Simple Function (No Arguments, No Return Value)**: 
+  ```python
+  def greet():
+      print("Hello!")
+  ```
 
-**Function with Keyword Arguments (Using kwargs):**
-print_info(**kwargs) accepts any number of keyword arguments and prints them in a key-value pair format.
+- **Function with Arguments (No Return Value)**: 
+  ```python
+  def greet_person(name):
+      print(f"Hello, {name}!")
+  ```
 
-**Lambda Function (Anonymous Function):**
-multiply = lambda x, y: x * y creates a simple anonymous function that multiplies two numbers.
+- **Function with Return Value (No Arguments)**: 
+  ```python
+  def get_favorite_number():
+      return 7
+  ```
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- **Function with Arguments and Return Value**: 
+  ```python
+  def add_numbers(a, b):
+      return a + b
+  ```
 
-**Classes and Objects:**
-**Class Definition:**
+- **Function with Default Arguments**: 
+  ```python
+  def greet_person_with_default(name="Guest"):
+      print(f"Hello, {name}!")
+  ```
 
-class Car: defines a class named Car.
-Inside the class, we have an initializer method (__init__), which is called when an object of the class is created. This method initializes the object's attributes (make, model, and year).
-Methods are functions defined inside the class. For example, display_info(), start_engine(), and stop_engine() are methods that operate on the objects.
+- **Function with Variable Number of Arguments (Using *args)**: 
+  ```python
+  def print_numbers(*args):
+      print(args)
+  ```
 
-**Creating Objects:**
+- **Function with Keyword Arguments (Using **kwargs)**: 
+  ```python
+  def print_info(**kwargs):
+      print(kwargs)
+  ```
 
-car1 = Car("Toyota", "Corolla", 2020) creates an object of the Car class and passes values for make, model, and year to the __init__ method.
-car2 = Car("Honda", "Civic", 2022) creates another object.
-Accessing Methods and Attributes:
+- **Lambda Function (Anonymous Function)**: 
+  ```python
+  multiply = lambda x, y: x * y
+  ```
 
-car1.display_info() calls the display_info method on the car1 object to print the details of the car.
-car1.start_engine() starts the engine for car1.
-Similarly, methods are called for car2.
+---
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### **Classes and Objects:**
 
+- **Class Definition**: 
+  ```python
+  class Car:
+      def __init__(self, make, model, year):
+          self.make = make
+          self.model = model
+          self.year = year
 
+      def display_info(self):
+          print(f"{self.year} {self.make} {self.model}")
+
+      def start_engine(self):
+          print("Engine started")
+
+      def stop_engine(self):
+          print("Engine stopped")
+  ```
+
+- **Creating Objects**:
+  ```python
+  car1 = Car("Toyota", "Corolla", 2020)
+  car2 = Car("Honda", "Civic", 2022)
+  ```
+
+- **Accessing Methods and Attributes**:
+  ```python
+  car1.display_info()  # Outputs: 2020 Toyota Corolla
+  car1.start_engine()  # Outputs: Engine started
+  ```
