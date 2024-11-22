@@ -1,22 +1,63 @@
 # python-learning
 
 ### **Data Types:**
-
 - **Integer**: Whole numbers.
+# Integer: Whole numbers.
+integer_val = 42
+
 - **Float**: Numbers with decimals.
+# Float: Numbers with decimals.
+float_val = 3.14
+
 - **Complex**: Numbers with a real and imaginary part.
+# Complex: Numbers with a real and imaginary part.
+complex_val = 2 + 3j
+
 - **String**: Sequence of characters.
+# String: Sequence of characters.
+string_val = "Hello, World!"
+
 - **Boolean**: Logical values (True or False).
+# Boolean: Logical values (True or False).
+boolean_val = True
+
 - **List**: Ordered and mutable collection.
+# List: Ordered and mutable collection.
+list_val = [1, 2, 3, 4]
+
 - **Tuple**: Ordered but immutable collection.
+# Tuple: Ordered but immutable collection.
+tuple_val = (1, 2, 3, 4)
+
 - **Set**: Unordered collection of unique elements.
+# Set: Unordered collection of unique elements.
+set_val = {1, 2, 3, 4}
+
 - **Dictionary**: Key-value pairs.
+# Dictionary: Key-value pairs.
+dict_val = {"key1": "value1", "key2": "value2"}
+
 - **None**: Represents the absence of a value.
+# None: Represents the absence of a value.
+none_val = None
+
 - **Bytes**: Immutable sequence of bytes.
+# Bytes: Immutable sequence of bytes.
+bytes_val = b"Hello"
+
 - **Bytearray**: Mutable sequence of bytes.
+# Bytearray: Mutable sequence of bytes.
+bytearray_val = bytearray(b"Hello")
+
 - **Range**: Represents a sequence of numbers.
+# Range: Represents a sequence of numbers.
+range_val = range(1, 10)
+
 - **Frozenset**: Immutable version of a set.
-- 
+# Frozenset: Immutable version of a set.
+frozenset_val = frozenset([1, 2, 3, 4])
+
+ 
 **Examples here :** https://github.com/azam123/python-learning/blob/main/data_types.py
 ---
 
