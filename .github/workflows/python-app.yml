@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repository with PAT
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_PAT }}  # Use the PAT instead of default bot token
+          token: ${{ secrets.GH_PAT }}  # ✅ Use PAT for authentication
 
       - name: Set up Python
         uses: actions/setup-python@v3
@@ -26,7 +26,7 @@ jobs:
           git config --global user.email "actions@github.com"
 
       - name: Run Publishing Script
-        run: python publish_code.py
+        run: python publish_code.py  # Your script to publish code
 
       - name: Push Changes
         run: |
