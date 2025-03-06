@@ -3,7 +3,7 @@ name: Daily Code Publisher
 on:
   schedule:
     - cron: "0 0 * * *"  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   publish:
@@ -12,14 +12,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}  # Use the PAT instead of default bot token
 
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: "3.x"
-
-      - name: Install Git
-        run: sudo apt-get install git -y
 
       - name: Configure Git
         run: |
@@ -27,9 +26,9 @@ jobs:
           git config --global user.email "actions@github.com"
 
       - name: Run Publishing Script
-        run: python Daily_code.py
+        run: python publish_code.py
 
       - name: Push Changes
         run: |
           git pull --rebase
-          git push
+          git push origin main
